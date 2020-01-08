@@ -47,8 +47,5 @@ The LSTM model has a number of hyperparameters that dictate the architecture and
 ### Training and Evaluation 
 The model described in the previous section is trained on a set of 80000 observations. The loss metric used in the process of training the model is sparse categorical cross entropy. Sparse categorical cross entropy is a loss function that measures the difference between the distribution of observed class labels and the predicted probabilities of class membership. The optimizer used in the process of training the model is the Adam optimizer. The Adam optimizer is an adaptive learning rate optimization algorithm that’s been designed specifically for training deep neural network. The model is trained and evaluated over 10 epochs. An epoch is a hyperparameter in the model that represents the entire dataset undergoing a forward and backward propagation through the neural network only once. On each epoch the data is trained on the training set and the training loss and training accuracy is recorded. In addition, on each epoch the model is evaluated on the testing set and the testing loss and testing accuracy is recorded. 
 
+## Results 
 
-
-
-
-Subsequently, the model is evaluated on 5000 observations.  
