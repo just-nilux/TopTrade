@@ -43,3 +43,6 @@ The LSTM model has a number of hyperparameters that dictate the architecture and
 - **LSTM Layer Units:** The number of nodes in each LSTM layer.
 - **Dense Layer Units:** The number of nodes in each dense layer. 
 - **LSTM Layers:** The number of LSTM layers in the model. 
+
+## Results 
+
