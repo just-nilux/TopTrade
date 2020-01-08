@@ -5,4 +5,10 @@ TopTrade is a machine leaning system that aims to predict whether a certain cryp
 ## Introduction
 ### Data
 The data in this project was sourced from the Poloniex API. The Poloniex API gives access to data from the most popular cryptocurrencies, including the ones that I will be using, at a variety of granularities. For each of the four cryptocurrencies we are interested in the close and the volume values at the minute level. The close is the cryptocurrencies market price at the end of the minute interval and the volume is the amount of units that were exchanged during the minute interval. Below is initial structure of the data as described above: 
+
 <img width="672" alt="Screen Shot 2020-01-07 at 10 10 23 PM" src="https://user-images.githubusercontent.com/34798787/71947517-1f1e6900-319b-11ea-960d-d607dd76753b.png">
+
+### Features 
+With the goal of flexibilty in mind, I would like the ability to dynamically change the cryptocurrency that will predicted. This means that the preliminary set of features that the underlying model will use to generate the predictions will consist of the historical values of the volume of the cryptocurrency being predicted along with the historical values of the volume and close of the remaining three cryptocurrencies. It is my hope that this set of features will offer insight into the price movement of the target cryptocurrency. The high level hypothesis I am making is that the prices and volumes of cryptocurrencies are related in some way. In order to test this assumption, I looked into how the prices of the various cryptocurrencies are correlated. This was done by taking the original dataset and selecting only columns corresponding to cryptocurrencies prices (4 in total). I then normalized this data by taking the percentage change between subsequent values in each columns. The pearson correlation coefficitents were then calculated between the cryptocurrencies. An illustrustion of the aforementioned analysis is below: 
+
+<img width="368" alt="Screen Shot 2020-01-07 at 5 40 13 PM" src="https://user-images.githubusercontent.com/34798787/71948527-47f42d80-319e-11ea-82f5-9a3725bb2551.png">
