@@ -20,4 +20,7 @@ Based on our existing features, I will derive additional potentially insightful 
 
 - **7 Interval Moving Average:** The average of the prices over the last 7 intervals.
 - **21 Interval Moving Average:** The average of the prices over the last 21 intervals.
-- **26 Interval Exponential Moving Average:** The average of the prices over the last 7 intervals with more weighting to more recent prices. 
+- **12 Interval Exponential Moving Average:** The average of the prices over the last 12 intervals with more wighting to more recent prices. 
+- **26 Interval Exponential Moving Average:** The average of the prices over the last 26 intervals with more weighting to more recent prices. 
+- **20 Interval Standard Deviation:** The standard deviation of the 20 previous intervals. 
+**Bollinger Bands:** A Bollinger Band® is a technical analysis tool defined by a set of lines plotted two standard deviations (positively and negatively) away from a simple moving average (SMA) of the price
