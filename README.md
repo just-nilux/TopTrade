@@ -39,4 +39,5 @@ When selecting the model to generate the predictions, it is important to conside
 ![The_LSTM_cell](https://user-images.githubusercontent.com/34798787/71954598-cdcea380-31b3-11ea-93ab-af83f74e3a25.png)
 
 ### Hyperparameter Tuning 
-
+The LSTM model has a number of hyperparameters that dictate the architecture and other high level information about the model. In order to generate the best model possible, I will try different permutations of the hyperparameters and select the model with the best performance. Due to the intensive nature of the computation involved with the corresponding grid search for the model's hyperparameters, only a limited number of permutations of model hyperparameters will be evaluated. Below are the three hyperparameters that will be involved in this grid search: 
+- jj
